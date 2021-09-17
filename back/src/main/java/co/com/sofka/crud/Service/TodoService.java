@@ -1,5 +1,9 @@
-package co.com.sofka.crud.Todo;
+package co.com.sofka.crud.Service;
 
+import co.com.sofka.crud.Todo.InterfaceTodoService;
+import co.com.sofka.crud.Todo.Todo;
+import co.com.sofka.crud.Todo.TodoDTO;
+import co.com.sofka.crud.Todo.TodoRepository;
 import co.com.sofka.crud.TodoList.TodoList;
 import co.com.sofka.crud.TodoList.TodoListDTO;
 import co.com.sofka.crud.TodoList.TodoListRepository;
