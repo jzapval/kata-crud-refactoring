@@ -9,7 +9,8 @@ function App() {
   return (
     <StoreProvider>
       <div className="container-fluid border bg bg-light">
-        <h2 className="my-5 text-center ">TO-DO</h2>
+        <h1 className="my-5 text-center ">TO-DO</h1>
+        <h3 className="my-5 text-center ">ESTA ES TU LISTA DE TAREAS</h3>
         <TodoListForm />
         <div className="container mt-5 mb-5">
           <TodoListList />
