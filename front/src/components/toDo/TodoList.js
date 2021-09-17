@@ -51,11 +51,10 @@ const TodoList = ({todoListId}) => {
   };
 
   return <div className="mt-3">
-    <table className="table table-striped text-center ">
-        <thead class="bg bg-info">
+    <table className="table table-striped text-center bg bg-light">
+        <thead class="">
           <tr>
-            <th>ID</th>
-            <th>TAREAS</th>
+            <th>TAREA</th>
             <th>¿COMPLETADO?</th>
             <th>ACCIONES</th>
           </tr>
@@ -63,7 +62,6 @@ const TodoList = ({todoListId}) => {
         <tbody>
           {currentList.map((todo) => {
             return <tr key={todo.id} style={todo.completed ? decorationDone : {}}>
-              <td className="align-middle">{todo.id}</td>
               <td className="align-middle">{todo.name}</td>
               <td className="align-items-center">
                 <input type="checkbox" className="" defaultChecked={todo.completed} onChange={(event) => onChange(event, todo)}></input>
@@ -76,7 +74,7 @@ const TodoList = ({todoListId}) => {
           })}
         </tbody>
       </table>
-      <div class="text-center">No se han creado tareas aún.</div>
+      <div className={currentList.length === 0 ? "": "d-none text-center"}>No se han creado tareas aún.</div>
   </div>
 }
 

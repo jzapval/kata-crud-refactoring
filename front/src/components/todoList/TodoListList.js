@@ -29,11 +29,11 @@ const TodoListList = () => {
       <div>
         {currentList.map((todoList) => {
           return (
-            <div className="p-3 my-3 border"  key={todoList.id}>
-              <div className="d-flex justify-content-between mb-4">
-                <h4>{ todoList.name ? todoList.name.toUpperCase() : ""}</h4>
-                <button type="button" className="btn btn-danger btn-md" onClick={() => onDelete(todoList.id)}>Eliminar</button>
+            <div className="p-3 my-3 border bg bg-dark"  key={todoList.id}>
+              <div className="d-flex justify-content-center mb-4">
+                <h4 className="text text-center text-light">{ todoList.name ? todoList.name.toUpperCase() : ""}</h4>
               </div>
+                <button type="button" className="btn btn-danger form-control mb-3" onClick={() => onDelete(todoList.id)}>Eliminar Tarea</button>
               <TodoForm todoListId={todoList.id} />
               <TodoList todoListId={todoList.id} />
             </div>
