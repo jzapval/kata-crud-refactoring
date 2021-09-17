@@ -8,10 +8,10 @@ import StoreProvider from "./provider";
 function App() {
   return (
     <StoreProvider>
-      <div className="container border my-3 w-75 p-3 bg bg-light">
-        <h2 className="my-3 text-center">To-Do LISTA</h2>
+      <div className="container-fluid border bg bg-light">
+        <h2 className="my-5 text-center ">TO-DO</h2>
         <TodoListForm />
-        <div className="container mt-5">
+        <div className="container mt-5 mb-5">
           <TodoListList />
         </div>
       </div>

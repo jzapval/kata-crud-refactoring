@@ -58,14 +58,14 @@ const TodoListForm = () => {
             setState({ ...state, name: event.target.value });
           }}
         ></input>
-      </div>
-      <button
+        <button
         type="button"
         className="btn btn-info btn-md ml-2"
         onClick={onAdd}
       >
         Nueva lista
       </button>
+      </div>      
     </form>
   );
 };
