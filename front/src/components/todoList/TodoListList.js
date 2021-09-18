@@ -52,7 +52,7 @@ const TodoListList = () => {
         })}
       </div>
       <div className={currentList.length === 0 ? "" : "d-none"}>
-        No se han creado listas de tareas aún.
+        <h4 className="text-center">No se han creado listas de tareas aún.</h4>
       </div>
     </div>
   );

@@ -74,7 +74,9 @@ const TodoList = ({todoListId}) => {
           })}
         </tbody>
       </table>
-      <div className={currentList.length === 0 ? "": "d-none text-center"}>No se han creado tareas aún.</div>
+      <div className={currentList.length === 0 ? "": "d-none"}>
+        <h4 className="text-center">No se han creado tareas aún.</h4>
+      </div>
   </div>
 }
 
