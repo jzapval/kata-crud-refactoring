@@ -53,7 +53,7 @@ const TodoList = ({todoListId}) => {
   return <div className="mt-3">
     <table className="table table-striped text-center bg bg-light">
         <thead class="">
-          <tr>
+          <tr className="bg-tercero text-light">
             <th>TAREA</th>
             <th>¿COMPLETADO?</th>
             <th>ACCIONES</th>
@@ -61,10 +61,10 @@ const TodoList = ({todoListId}) => {
         </thead>
         <tbody>
           {currentList.map((todo) => {
-            return <tr key={todo.id} style={todo.completed ? decorationDone : {}}>
+            return <tr className="table-success" key={todo.id} style={todo.completed ? decorationDone : {}}>
               <td className="align-middle">{todo.name}</td>
               <td className="align-items-center">
-                <input type="checkbox" className="" defaultChecked={todo.completed} onChange={(event) => onChange(event, todo)}></input>
+                <input type="checkbox" className="check" defaultChecked={todo.completed} onChange={(event) => onChange(event, todo)}></input>
               </td>
               <td className="text-center">
                 <button type="button" onClick={() => onDelete(todo.id)} className="btn btn-danger btn-md">Eliminar</button>

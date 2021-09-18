@@ -29,8 +29,8 @@ const TodoListList = () => {
       <div>
         {currentList.map((todoList) => {
           return (
-            <div className="p-3 my-3 border bg bg-dark"  key={todoList.id}>
-              <div className="contenedor mb-4">
+            <div className="p-3 my-3 border bg-primero"  key={todoList.id}>
+              <div className="contenedor">
                 <h4 className="text text-center text-light">{ todoList.name ? todoList.name.toUpperCase() : ""}</h4>
                 <button type="button" className="btn btn-danger botonEliminar mb-3" onClick={() => onDelete(todoList.id)}>Eliminar Tarea</button>
               </div>

@@ -1,25 +1,49 @@
-body, html {
+body,
+html {
   margin: 45px;
-  font-family: 'Roboto', sans-serif!important;
+  font-family: "Roboto", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-html{
-  background-color: black;
+html {
+  background-color: #c8c6a7;
   opacity: 0.8;
 }
 
-.botonEliminar{
+.botonEliminar {
   width: 320px !important;
 }
 
-.contenedor{
+.contenedor {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 20px !important;
+  gap: 10px !important;
+}
+
+/* Fondos */
+.bg-primero {
+  background-color: #411f1f !important;
+}
+.bg-segundo {
+  background-color: #511281 !important;
+}
+.bg-tercero {
+  background-color: #4ca1a3 !important;
+}
+.bg-cuarto {
+  background-color: #a5e1ad !important;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+}
+
+input{
+  width: 320px !important;
 }
 
 

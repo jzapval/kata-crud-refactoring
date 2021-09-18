@@ -88,12 +88,12 @@ const TodoForm = ({ todoListId }) => {
   };
 
   return (
-    <form className="form-inline d-flex justify-content-center" ref={formRef}>
-      <div className="form-group">
+    <form className="form-inline d-flex justify-content-center contenedor" ref={formRef}>
+      <div className="form-group contendor">
         <input
           type="text"
           name="name"
-          placeholder="¿Qué piensas hacer?"
+          placeholder="Ingresa la tarea"
           className={
             error && error.id === todoListId
               ? "is-invalid form-control form-control"
@@ -121,12 +121,12 @@ const TodoForm = ({ todoListId }) => {
         type="button"
         className={
           todoListId !== item.todoListId
-            ? "btn btn-info btn-md ml-2"
+            ? "btn bg-cuarto btn-md ml-2"
             : "d-none"
         }
         onClick={onAdd}
       >
-        Crear Lista
+        Crear Tarea
       </button>
     </form>
   );

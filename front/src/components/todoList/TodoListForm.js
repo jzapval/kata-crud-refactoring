@@ -44,12 +44,15 @@ const TodoListForm = () => {
   };
 
   return (
-    <form className="form-inline d-flex justify-content-center mt-5" ref={formRef}>
-      <div className="form-group">
+    <form
+      className="form-inline d-flex justify-content-center mt-5"
+      ref={formRef}
+    >
+      <div className="form-group contenedor">
         <input
           type="text"
           name="name"
-          placeholder="Nombre de la lista"
+          placeholder="Ingrese el nombre de la lista"
           className={
             error ? "is-invalid form-control form-control" : "form-control"
           }
@@ -59,13 +62,13 @@ const TodoListForm = () => {
           }}
         ></input>
         <button
-        type="button"
-        className="btn btn-info btn-md ml-2"
-        onClick={onAdd}
-      >
-        Nueva lista
-      </button>
-      </div>      
+          type="button"
+          className="btn bg-cuarto btn-md ml-2"
+          onClick={onAdd}
+        >
+          Crear lista
+        </button>
+      </div>
     </form>
   );
 };
