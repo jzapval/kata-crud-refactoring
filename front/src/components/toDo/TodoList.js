@@ -67,8 +67,8 @@ const TodoList = ({todoListId}) => {
                 <input type="checkbox" className="check" defaultChecked={todo.completed} onChange={(event) => onChange(event, todo)}></input>
               </td>
               <td className="text-center">
-                <button type="button" onClick={() => onDelete(todo.id)} className="btn btn-danger btn-md">Eliminar</button>
-                <button disabled={todo.completed} onClick={() => onEdit(todo)} type="button" className="btn btn-info btn-md ml-1">Editar</button>
+                <button type="button" onClick={() => onDelete(todo.id)} className="btn btn-danger btn-md"><i class="fas fa-minus-circle text-light"></i></button>
+                <button disabled={todo.completed} onClick={() => onEdit(todo)} type="button" className="btn btn-info btn-md ml-1"><i class="fas fa-edit text-light"></i></button>
               </td>
             </tr>
           })}
