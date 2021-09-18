@@ -10,4 +10,16 @@ html{
   opacity: 0.8;
 }
 
+.botonEliminar{
+  width: 320px !important;
+}
+
+.contenedor{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 20px !important;
+}
+
 
