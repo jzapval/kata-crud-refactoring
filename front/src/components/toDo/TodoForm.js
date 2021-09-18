@@ -110,7 +110,7 @@ const TodoForm = ({ todoListId }) => {
         type="button"
         className={
           todoListId === item.todoListId
-            ? "btn btn-secondary btn-sm ml-2"
+            ? "btn bg-tercero btn-md ml-2"
             : "d-none"
         }
         onClick={onEdit}
